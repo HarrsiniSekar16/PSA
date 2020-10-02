@@ -18,7 +18,7 @@ public class Sum2Strings {
         int carry = 0;
         StringBuilder sb = new StringBuilder();
         while(idx1 >= 0 || idx2 >= 0){
-            int x = idx1 >= 0 ? num1.charAt(idx1) - 48 : 0; // or ... num1.charAt(idx1) - '0' : 0; 
+            int x = idx1 >= 0 ? num1.charAt(idx1) - 48 : 0;  
             int y = idx2 >= 0 ? num2.charAt(idx2) - 48 : 0;
             int sum = x + y + carry;
             carry = sum / 10;
